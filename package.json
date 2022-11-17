@@ -7,12 +7,16 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha ./tests/**.js -w"
+    "test": "jest --verbose --detectOpenHandles"
   },
   "author": "JavierBalonga",
   "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
   "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^8.2.1"
+    "express": "^4.17.1",
+    "supertest": "^6.1.4"
   }
 }
+
